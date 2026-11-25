@@ -1,0 +1,7 @@
+[book]
+title = "Why Cells 'Turn Off' & Chronic Disease"
+authors = ["iamflipse"]
+description = "Study wiki distilling A Midwestern Doctor's 'Why Do Cells \"Turning Off\" Underlie So Many Chronic Diseases?' (Feb 2026) and Dr. Robert Naviaux's Cell Danger Response research (2014–2025)."
+
+[output.html]
+git-repository-url = "https://github.com/iamflipse/cells-turning-off-wiki"
