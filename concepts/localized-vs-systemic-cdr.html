@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Localized vs. Systemic CDR &amp; Aging - Why Cells &#x27;Turn Off&#x27; &amp; Chronic Disease</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Study wiki distilling A Midwestern Doctor&#x27;s &#x27;Why Do Cells &quot;Turning Off&quot; Underlie So Many Chronic Diseases?&#x27; (Feb 2026) and Dr. Robert Naviaux&#x27;s Cell Danger Response research (2014–2025).">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Why Cells "Turn Off" & Chronic Disease</li><li class="chapter-item expanded "><a href="../about.html"><strong aria-hidden="true">1.</strong> About & Series Map</a></li><li class="chapter-item expanded "><a href="../concepts/two-root-mechanisms.html"><strong aria-hidden="true">2.</strong> Two Root Mechanisms: Circulation & Cells Turning Off</a></li><li class="chapter-item expanded "><a href="../concepts/mitochondrial-cdr-mechanics.html"><strong aria-hidden="true">3.</strong> How Mitochondria Trigger the Cell Danger Response</a></li><li class="chapter-item expanded "><a href="../concepts/naviaux-research-timeline.html"><strong aria-hidden="true">4.</strong> Naviaux's Landmark CDR Research (2014–2025)</a></li><li class="chapter-item expanded "><a href="../concepts/purinergic-signaling-and-learning.html"><strong aria-hidden="true">5.</strong> Purinergic Signaling, Sickness Behavior & Learning</a></li><li class="chapter-item expanded "><a href="../concepts/why-cdr-matters-clinically.html"><strong aria-hidden="true">6.</strong> Why the CDR Explains Complex Chronic Illness</a></li><li class="chapter-item expanded "><a href="../concepts/spike-proteins-and-immunity.html"><strong aria-hidden="true">7.</strong> Spike Proteins, Immunity & T-Cell Exhaustion</a></li><li class="chapter-item expanded "><a href="../concepts/cdr-zeta-potential-water.html"><strong aria-hidden="true">8.</strong> CDR, Zeta Potential & Liquid Crystalline Water</a></li><li class="chapter-item expanded "><a href="../concepts/four-step-clinical-protocol.html"><strong aria-hidden="true">9.</strong> The 4-Step Clinical Protocol & Failure Modes</a></li><li class="chapter-item expanded "><a href="../concepts/localized-vs-systemic-cdr.html" class="active"><strong aria-hidden="true">10.</strong> Localized vs. Systemic CDR & Aging</a></li><li class="chapter-item expanded "><a href="../reference/quotes-and-glossary.html"><strong aria-hidden="true">11.</strong> Key Quotes & Glossary</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Why Cells &#x27;Turn Off&#x27; &amp; Chronic Disease</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/iamflipse/cells-turning-off-wiki" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="localized-vs-systemic-cdr--aging"><a class="header" href="#localized-vs-systemic-cdr--aging">Localized vs. Systemic CDR &amp; Aging</a></h1>
+<p>Like microvascular obstructions, cells turning off in the Cell Danger Response do not have to affect the whole body uniformly—they can lock locally, spread systemically, or sit in a mixed gradient.</p>
+<h2 id="local-injury-sites-as-early-warning-flags"><a class="header" href="#local-injury-sites-as-early-warning-flags">Local Injury Sites as Early Warning Flags</a></h2>
+<p>In practice, A Midwestern Doctor emphasizes that <strong>systemic illnesses frequently reveal themselves first inside previously injured regions</strong>:</p>
+<ul>
+<li>Old surgical scars, prior sprains, or poorly healed joint injuries harbor pockets of sensitized, marginally functional tissue.</li>
+<li>Seeing strange localized pain or injury flares immediately after COVID-19 vaccination served clinically as an early predictor that broader systemic CDR issues were brewing.</li>
+</ul>
+<h2 id="how-regenerative-medicine-tackles-local-vs-systemic-cdr"><a class="header" href="#how-regenerative-medicine-tackles-local-vs-systemic-cdr">How Regenerative Medicine Tackles Local vs. Systemic CDR</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Scale</th><th>Pattern &amp; Mechanism</th><th>Primary Therapeutic Strategy Noted</th><th>Where Covered</th></tr></thead><tbody>
+<tr><td><strong>Localized CDR</strong></td><td>Isolated pockets of non-functional or non-dividing tissue (e.g., scars, joints, non-healing focal lesions)</td><td>Targeted <strong>therapeutic injections</strong> that trigger localized repair/mitosis and tissue biophysics</td><td><strong>Part 2</strong> of Substack series <em>(external)</em></td></tr>
+<tr><td><strong>Systemic CDR</strong></td><td>Body-wide hypometabolic shutdown and multi-organ signaling resistance</td><td>Strictly <strong>sequenced</strong> global restoration—often leaning on <strong>biophysics modalities</strong> (e.g., ultraviolet blood irradiation) that propagate rapidly through the body without toxic overload</td><td><strong>Part 3</strong> (<a href="https://iamflipse.github.io/cell-danger-response-wiki/">Companion Wiki</a>)</td></tr>
+</tbody></table>
+</div>
+<h2 id="aging-as-progressive-biophysical--cdr-accumulation"><a class="header" href="#aging-as-progressive-biophysical--cdr-accumulation">Aging as Progressive Biophysical + CDR Accumulation</a></h2>
+<p>A Midwestern Doctor closes by tying chronic cellular dormancy directly to normal human aging:</p>
+<ol>
+<li>Over the decades, declining kidney efficiency and accumulated toxic burdens steadily erode <strong>physiologic zeta potential</strong> and fluid flow.</li>
+<li>Simultaneously, unresolved micro-shocks leave an ever-larger fraction of cells parked inside a <strong>sustained CDR</strong> across organs.</li>
+</ol>
+<p>As a result, many hallmarks traditionally treated as inevitable aging reflect cumulative circulatory stagnation and silent cellular shutdown—which is why therapies designed to restore tissue wakefulness and systemic safety signals become increasingly valuable with age.</p>
+<hr />
+<p><strong>Next:</strong> <a href="../reference/quotes-and-glossary.html">Key Quotes &amp; Glossary</a> · <strong>Explore Part 3:</strong> <a href="https://iamflipse.github.io/cell-danger-response-wiki/">Cell Danger Response &amp; The Health Cycle</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../concepts/four-step-clinical-protocol.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../reference/quotes-and-glossary.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../concepts/four-step-clinical-protocol.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../reference/quotes-and-glossary.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
